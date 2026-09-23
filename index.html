@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Roamora — Your premium travel & tourism partner. Explore breathtaking destinations, luxury packages, and unforgettable adventures across the globe.">
+  <meta property="og:title" content="Roamora | Explore. Dream. Discover.">
+  <meta property="og:description" content="Premium travel experiences across the world's most beautiful destinations.">
+  <meta property="og:type" content="website">
+  <title>Roamora | Explore. Dream. Discover.</title>
+  <link rel="canonical" href="index.html">
+  <!-- Bootstrap 5 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- Page Loader -->
+<div class="page-loader" id="pageLoader">
+  <div class="loader-logo">Roam<span>ora</span></div>
+  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+</div>
+
+<!-- Custom Cursor -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- Offcanvas Overlay -->
+<div class="offcanvas-overlay" id="offcanvasOverlay"></div>
+
+<!-- Offcanvas Navigation -->
+<nav class="offcanvas-nav" id="offcanvasNav" aria-label="Mobile navigation">
+  <button class="offcanvas-close" id="offcanvasClose" aria-label="Close menu"><i class="bi bi-x-lg"></i></button>
+  <div class="nav-logo" style="color:#fff;">
+    <div class="nav-logo-icon"><i class="bi bi-compass-fill"></i></div>
+    Roam<span>ora</span>
+  </div>
+  <div class="offcanvas-links">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="services.html">Services</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+    <a href="faq.html">FAQ</a>
+  </div>
+  <div class="offcanvas-buttons">
+    <a href="login.html" class="btn-nav-login text-center">Login</a>
+    <a href="signup.html" class="btn-nav-signup text-center">Sign Up</a>
+  </div>
+</nav>
+
+<!-- Navbar -->
+<header id="mainNavbar" role="banner">
+  <div class="navbar-inner">
+    <a href="index.html" class="nav-logo" aria-label="Roamora Home">
+      <div class="nav-logo-icon"><i class="bi bi-compass-fill"></i></div>
+      Roam<span>ora</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="index.html" class="nav-link-item active">Home</a>
+      <a href="about.html" class="nav-link-item">About</a>
+      <a href="destinations.html" class="nav-link-item">Destinations</a>
+      <a href="services.html" class="nav-link-item">Services</a>
+      <a href="blog.html" class="nav-link-item">Blog</a>
+      <a href="contact.html" class="nav-link-item">Contact</a>
+      <a href="faq.html" class="nav-link-item">FAQ</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <i class="bi bi-moon-stars-fill"></i>
+      </button>
+      <a href="signup.html" class="btn-nav-signup">Sign Up</a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open mobile menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ═══ HERO SECTION ═══ -->
+<section class="hero" id="hero" aria-label="Hero section">
+  <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1920&q=85');"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-particles" id="heroParticles"></div>
+
+  <!-- Floating shapes -->
+  <div class="floating-shape" style="width:120px;height:120px;background:rgba(232,160,74,0.08);top:20%;right:10%;animation-delay:0s;"></div>
+  <div class="floating-shape" style="width:80px;height:80px;background:rgba(232,160,74,0.06);top:60%;right:20%;animation-delay:2s;"></div>
+  <div class="floating-shape" style="width:60px;height:60px;background:rgba(255,255,255,0.04);top:35%;left:5%;animation-delay:4s;"></div>
+
+  <div class="container-xl hero-content">
+    <div class="row align-items-center">
+      <div class="col-lg-7">
+        <h1 class="hero-title">
+          Discover the<br>
+          World's <span class="highlight">Hidden</span><br>
+          Wonders
+        </h1>
+        <p class="hero-desc">
+          From majestic mountain peaks to tropical paradises — Roamora crafts extraordinary journeys that transform your travel dreams into breathtaking realities.
+        </p>
+        <div class="hero-actions">
+          <a href="destinations.html" class="btn-primary-custom">
+            <span>Explore Destinations</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+          <a href="services.html" class="btn-outline-custom" style="color:#fff; border-color:rgba(255,255,255,0.5);">
+            <i class="bi bi-play-circle"></i>
+            <span>Our Services</span>
+          </a>
+        </div>
+
+        <!-- Search Widget -->
+        <div class="hero-search">
+          <div class="hero-search-field">
+            <label for="searchDest">Destination</label>
+            <select id="searchDest">
+              <option value="">Select Destination</option>
+              <option>Maldives, Asia</option>
+              <option>Santorini, Europe</option>
+              <option>Machu Picchu, Americas</option>
+              <option>Serengeti, Africa</option>
+              <option>Kyoto, Japan</option>
+              <option>Patagonia, Argentina</option>
+            </select>
+          </div>
+          <div class="hero-search-field">
+            <label for="searchDate">Travel Date</label>
+            <input type="date" id="searchDate">
+          </div>
+          <div class="hero-search-field">
+            <label for="searchGuests">Guests</label>
+            <select id="searchGuests">
+              <option>1 Person</option>
+              <option>2 People</option>
+              <option>3–5 People</option>
+              <option>6+ People</option>
+            </select>
+          </div>
+          <a href="destinations.html" class="btn-primary-custom" style="white-space:nowrap; flex-shrink:0;">
+            <i class="bi bi-search"></i>
+            <span>Search</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll" aria-hidden="true">
+    <span>SCROLL</span>
+    <div class="hero-scroll-line"></div>
+  </div>
+</section>
+
+<!-- ═══ STATS BAR ═══ -->
+<section class="stats-bar" aria-label="Statistics">
+  <div class="container-xl">
+    <div class="row g-0 text-center">
+      <div class="col-6 col-md-3">
+        <div class="stat-item reveal delay-1">
+          <span class="stat-number" data-count="150" data-suffix="+">0</span>
+          <div class="stat-label">Destinations</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-item reveal delay-2">
+          <span class="stat-number" data-count="48000" data-suffix="+">0</span>
+          <div class="stat-label">Happy Travelers</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-item reveal delay-3">
+          <span class="stat-number" data-count="320" data-suffix="+">0</span>
+          <div class="stat-label">Tour Packages</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-item reveal delay-4">
+          <span class="stat-number" data-count="98" data-suffix="%">0</span>
+          <div class="stat-label">Satisfaction Rate</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FEATURED DESTINATIONS ═══ -->
+<section class="section-py" id="destinations" aria-label="Featured destinations">
+  <div class="container-xl">
+    <div class="row align-items-end section-header mb-0">
+      <div class="col-lg-6">
+        <span class="section-label">Top Picks</span>
+        <h2 class="section-title reveal">Featured <em>Destinations</em></h2>
+        <p class="section-desc reveal delay-1">Hand-picked by our travel experts — places that leave you breathless and memories that last a lifetime.</p>
+      </div>
+      <div class="col-lg-6 text-lg-end mt-3 mt-lg-0 reveal delay-2">
+        <a href="destinations.html" class="btn-outline-custom">
+          <span>View All Destinations</span>
+          <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="row g-4 mt-2">
+      <!-- Large card -->
+      <div class="col-lg-5">
+        <div class="dest-card dest-card-lg reveal">
+          <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&q=80" alt="Bali, Indonesia" class="dest-card-img" style="aspect-ratio:3/4; width:100%;" loading="lazy">
+          <div class="dest-card-overlay">
+            <span class="dest-card-tag">Most Popular</span>
+            <h3 class="dest-card-title">Bali, Indonesia</h3>
+            <div class="dest-card-meta"><i class="bi bi-geo-alt-fill"></i> Southeast Asia • 7–14 Days</div>
+            <div class="dest-card-btn">
+              <a href="destinations.html" class="btn-primary-custom" style="font-size:0.8rem; padding:10px 22px;">
+                <span>Explore</span> <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Right cards -->
+      <div class="col-lg-7">
+        <div class="row g-4 h-100">
+          <div class="col-sm-6">
+            <div class="dest-card reveal delay-1" style="height:100%;">
+              <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=800&q=80" alt="Santorini, Greece" class="dest-card-img" loading="lazy">
+              <div class="dest-card-overlay">
+                <span class="dest-card-tag">Europe</span>
+                <h3 class="dest-card-title">Santorini, Greece</h3>
+                <div class="dest-card-meta"><i class="bi bi-geo-alt-fill"></i> 5–10 Days</div>
+                <div class="dest-card-btn">
+                  <a href="destinations.html" class="btn-primary-custom" style="font-size:0.8rem; padding:10px 22px;">
+                    <span>Explore</span> <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="dest-card reveal delay-2" style="height:100%;">
+              <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=800&q=80" alt="Amalfi Coast, Italy" class="dest-card-img" loading="lazy">
+              <div class="dest-card-overlay">
+                <span class="dest-card-tag">Luxury</span>
+                <h3 class="dest-card-title">Amalfi Coast, Italy</h3>
+                <div class="dest-card-meta"><i class="bi bi-geo-alt-fill"></i> 7–12 Days</div>
+                <div class="dest-card-btn">
+                  <a href="destinations.html" class="btn-primary-custom" style="font-size:0.8rem; padding:10px 22px;">
+                    <span>Explore</span> <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="dest-card reveal delay-3" style="height:100%;">
+              <img src="https://images.unsplash.com/photo-1548013146-72479768bada?w=800&q=80" alt="Taj Mahal, India" class="dest-card-img" loading="lazy">
+              <div class="dest-card-overlay">
+                <span class="dest-card-tag">Cultural</span>
+                <h3 class="dest-card-title">Taj Mahal, India</h3>
+                <div class="dest-card-meta"><i class="bi bi-geo-alt-fill"></i> 10–15 Days</div>
+                <div class="dest-card-btn">
+                  <a href="destinations.html" class="btn-primary-custom" style="font-size:0.8rem; padding:10px 22px;">
+                    <span>Explore</span> <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="dest-card reveal delay-4" style="height:100%;">
+              <img src="https://images.unsplash.com/photo-1523978591478-c753949ff840?w=800&q=80" alt="Machu Picchu, Peru" class="dest-card-img" loading="lazy">
+              <div class="dest-card-overlay">
+                <span class="dest-card-tag">Adventure</span>
+                <h3 class="dest-card-title">Machu Picchu, Peru</h3>
+                <div class="dest-card-meta"><i class="bi bi-geo-alt-fill"></i> 8–14 Days</div>
+                <div class="dest-card-btn">
+                  <a href="destinations.html" class="btn-primary-custom" style="font-size:0.8rem; padding:10px 22px;">
+                    <span>Explore</span> <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ WHY CHOOSE US ═══ -->
+<section class="section-py bg-light-custom" aria-label="Why choose us">
+  <div class="container-xl">
+    <div class="section-header centered">
+      <span class="section-label">Why Roamora</span>
+      <h2 class="section-title reveal">Travel With <em>Confidence</em></h2>
+      <p class="section-desc reveal delay-1 mx-auto">We go beyond booking tickets — we craft stories, emotions, and experiences that define a lifetime.</p>
+    </div>
+    <div class="row g-4 align-items-stretch">
+      <div class="col-sm-6 col-lg-3 d-flex">
+        <div class="feature-box reveal delay-1">
+          <div class="feature-icon"><i class="bi bi-shield-fill-check"></i></div>
+          <h4>100% Safe &amp; Secure</h4>
+          <p>Your safety is our top priority. All our tours meet international safety standards with 24/7 emergency support.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 d-flex">
+        <div class="feature-box reveal delay-2">
+          <div class="feature-icon"><i class="bi bi-gem"></i></div>
+          <h4>Luxury Experiences</h4>
+          <p>From 5-star resorts to private yacht charters, we bring you handpicked luxury at every destination.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 d-flex">
+        <div class="feature-box reveal delay-3">
+          <div class="feature-icon"><i class="bi bi-headset"></i></div>
+          <h4>Expert Guidance</h4>
+          <p>Our travel consultants are seasoned explorers who bring personal knowledge and insider tips to your journey.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 d-flex">
+        <div class="feature-box reveal delay-4">
+          <div class="feature-icon"><i class="bi bi-patch-check-fill"></i></div>
+          <h4>Best Price Guarantee</h4>
+          <p>Find the same package cheaper elsewhere and we'll not only match it — we'll beat it by 10%.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ POPULAR PACKAGES ═══ -->
+<section class="section-py" aria-label="Popular tour packages">
+  <div class="container-xl">
+    <div class="row align-items-end section-header mb-0">
+      <div class="col-lg-6">
+        <span class="section-label">Tour Packages</span>
+        <h2 class="section-title reveal">Popular <em>Packages</em></h2>
+        <p class="section-desc reveal delay-1">Handcrafted itineraries for every type of traveler — from solo adventurers to luxury seekers.</p>
+      </div>
+      <div class="col-lg-6 text-lg-end mt-3 mt-lg-0 reveal delay-2">
+        <a href="services.html" class="btn-outline-custom">
+          <span>All Packages</span><i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="row g-4 mt-2">
+      <div class="col-md-6 col-lg-4">
+        <div class="tour-card reveal delay-1">
+          <div class="tour-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700&q=80" alt="Swiss Alps Adventure" class="tour-card-img" loading="lazy">
+            <span class="tour-badge popular">Hot Deal</span>
+            <button class="tour-wishlist" aria-label="Add to wishlist"><i class="bi bi-heart-fill"></i></button>
+          </div>
+          <div class="tour-card-body">
+            <div class="tour-card-meta">
+              <div class="tour-rating">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <span>5.0</span>
+              </div>
+              <span class="tour-reviews">(328 reviews)</span>
+            </div>
+            <h3 class="tour-card-title">Swiss Alps Mountain Adventure</h3>
+            <div class="tour-card-info">
+              <span class="tour-info-item"><i class="bi bi-calendar3"></i> 10 Days</span>
+              <span class="tour-info-item"><i class="bi bi-people-fill"></i> Max 12</span>
+              <span class="tour-info-item"><i class="bi bi-geo-alt-fill"></i> Switzerland</span>
+            </div>
+            <div class="tour-card-footer">
+              <div class="tour-price">
+                <small>Starting from</small>
+                <strong>$2,840</strong>
+              </div>
+              <a href="services.html" class="btn-primary-custom" style="font-size:0.8rem; padding:10px 20px;">
+                <span>Book Now</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="tour-card reveal delay-2">
+          <div class="tour-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=700&q=80" alt="Maldives Luxury Resort" class="tour-card-img" loading="lazy">
+            <span class="tour-badge new">New</span>
+            <button class="tour-wishlist" aria-label="Add to wishlist"><i class="bi bi-heart-fill"></i></button>
+          </div>
+          <div class="tour-card-body">
+            <div class="tour-card-meta">
+              <div class="tour-rating">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                <span>4.8</span>
+              </div>
+              <span class="tour-reviews">(214 reviews)</span>
+            </div>
+            <h3 class="tour-card-title">Maldives Luxury Overwater Escape</h3>
+            <div class="tour-card-info">
+              <span class="tour-info-item"><i class="bi bi-calendar3"></i> 7 Days</span>
+              <span class="tour-info-item"><i class="bi bi-people-fill"></i> Max 2</span>
+              <span class="tour-info-item"><i class="bi bi-geo-alt-fill"></i> Maldives</span>
+            </div>
+            <div class="tour-card-footer">
+              <div class="tour-price">
+                <small>Starting from</small>
+                <strong>$4,290</strong>
+              </div>
+              <a href="services.html" class="btn-primary-custom" style="font-size:0.8rem; padding:10px 20px;">
+                <span>Book Now</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="tour-card reveal delay-3">
+          <div class="tour-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=700&q=80" alt="African Safari Kenya" class="tour-card-img" loading="lazy">
+            <span class="tour-badge" style="background:#4aae8c; color:#fff;">Eco Tour</span>
+            <button class="tour-wishlist" aria-label="Add to wishlist"><i class="bi bi-heart-fill"></i></button>
+          </div>
+          <div class="tour-card-body">
+            <div class="tour-card-meta">
+              <div class="tour-rating">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <span>5.0</span>
+              </div>
+              <span class="tour-reviews">(189 reviews)</span>
+            </div>
+            <h3 class="tour-card-title">Kenya Safari Wildlife Experience</h3>
+            <div class="tour-card-info">
+              <span class="tour-info-item"><i class="bi bi-calendar3"></i> 14 Days</span>
+              <span class="tour-info-item"><i class="bi bi-people-fill"></i> Max 8</span>
+              <span class="tour-info-item"><i class="bi bi-geo-alt-fill"></i> Kenya</span>
+            </div>
+            <div class="tour-card-footer">
+              <div class="tour-price">
+                <small>Starting from</small>
+                <strong>$3,650</strong>
+              </div>
+              <a href="services.html" class="btn-primary-custom" style="font-size:0.8rem; padding:10px 20px;">
+                <span>Book Now</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TESTIMONIALS ═══ -->
+<section class="testimonial-section section-py" aria-label="Customer testimonials">
+  <div class="container-xl">
+    <div class="section-header centered">
+      <span class="section-label" style="color:#f5c47b;">What Travelers Say</span>
+      <h2 class="section-title reveal" style="color:#fff;">Real <em>Stories</em>, Real <em>Magic</em></h2>
+    </div>
+    <div class="row g-4 testimonials-track">
+      <div class="col-md-6 col-lg-4">
+        <div class="testimonial-card reveal delay-1">
+          <div class="testimonial-stars">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+          <p class="testimonial-text">"Roamora made our honeymoon to Bali absolutely perfect. Every detail was thought of — from the romantic dinners to the hidden temple visits. We felt like royalty!"</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Sophia Collins" class="testimonial-avatar" loading="lazy">
+            <div>
+              <div class="testimonial-name">Sophia Collins</div>
+              <div class="testimonial-role">Bali Honeymoon Package</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="testimonial-card reveal delay-2">
+          <div class="testimonial-stars">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+          <p class="testimonial-text">"The Swiss Alps tour exceeded every expectation. Our guide was incredibly knowledgeable. Roamora's attention to detail is what sets them apart from any other agency."</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="James Harrington" class="testimonial-avatar" loading="lazy">
+            <div>
+              <div class="testimonial-name">James Harrington</div>
+              <div class="testimonial-role">Swiss Alps Adventure</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="testimonial-card reveal delay-3">
+          <div class="testimonial-stars">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+          </div>
+          <p class="testimonial-text">"Booking a solo trip to Japan felt daunting, but Roamora's team handled everything seamlessly. The cherry blossom season tour was a dream I'll never forget!"</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Amara Singh" class="testimonial-avatar" loading="lazy">
+            <div>
+              <div class="testimonial-name">Amara Singh</div>
+              <div class="testimonial-role">Japan Cultural Tour</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TRAVEL BLOG PREVIEW ═══ -->
+<section class="section-py bg-light-custom" aria-label="Travel blog preview">
+  <div class="container-xl">
+    <div class="row align-items-end section-header mb-0">
+      <div class="col-lg-6">
+        <span class="section-label">Travel Stories</span>
+        <h2 class="section-title reveal">From Our <em>Blog</em></h2>
+        <p class="section-desc reveal delay-1">Inspiring stories, travel tips, and destination guides from our expert explorers.</p>
+      </div>
+      <div class="col-lg-6 text-lg-end mt-3 mt-lg-0 reveal delay-2">
+        <a href="blog.html" class="btn-outline-custom"><span>Read All Articles</span><i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="row g-4 mt-2">
+      <div class="col-md-6 col-lg-4">
+        <article class="blog-card reveal delay-1">
+          <div class="blog-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=700&q=80" alt="Tokyo at night guide" class="blog-card-img" loading="lazy">
+            <span class="blog-cat">Asia</span>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-date"><i class="bi bi-calendar3"></i> September 15, 2026</div>
+            <h3 class="blog-card-title">Tokyo After Dark: A Complete Night-Life Guide for Travelers</h3>
+            <p class="blog-card-excerpt">From neon-lit izakayas to rooftop bars overlooking Shinjuku — Tokyo's nightlife is a universe of its own waiting to be explored.</p>
+            <a href="blog.html" class="blog-read-more">Read More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <article class="blog-card reveal delay-2">
+          <div class="blog-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=700&q=80" alt="Patagonia trekking" class="blog-card-img" loading="lazy">
+            <span class="blog-cat">Adventure</span>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-date"><i class="bi bi-calendar3"></i> September 8, 2026</div>
+            <h3 class="blog-card-title">Patagonia on Foot: Trekking Trails That Will Blow Your Mind</h3>
+            <p class="blog-card-excerpt">The raw, untamed beauty of Patagonia is best experienced one step at a time. Here's your ultimate trekker's guide.</p>
+            <a href="blog.html" class="blog-read-more">Read More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <article class="blog-card reveal delay-3">
+          <div class="blog-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1513581166391-887a96ddeafd?w=700&q=80" alt="Santorini travel tips" class="blog-card-img" loading="lazy">
+            <span class="blog-cat">Europe</span>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-date"><i class="bi bi-calendar3"></i> August 29, 2026</div>
+            <h3 class="blog-card-title">Santorini in 5 Days: The Perfect Itinerary for First-Timers</h3>
+            <p class="blog-card-excerpt">White-washed buildings, volcanic sunsets, and crystal-blue waters — plan the perfect Santorini escape with our detailed guide.</p>
+            <a href="blog.html" class="blog-read-more">Read More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ NEWSLETTER ═══ -->
+<section class="newsletter-section section-py" aria-label="Newsletter signup">
+  <div class="container-xl">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-5 mb-lg-0">
+        <span class="section-label" style="color:#f5c47b;">Stay Inspired</span>
+        <h2 class="section-title reveal" style="color:#fff;">Get Exclusive <em style="color:var(--primary)">Travel Deals</em> Directly in Your Inbox</h2>
+        <p class="reveal delay-1" style="color:rgba(255,255,255,0.7); font-size:1rem; line-height:1.8;">Join 25,000+ travel enthusiasts and receive weekly destination guides, hidden gem discoveries, and members-only discounts.</p>
+      </div>
+      <div class="col-lg-5 offset-lg-1">
+        <form class="newsletter-form" data-validate aria-label="Newsletter signup form">
+          <input class="newsletter-input" type="email" id="newsletterEmail" placeholder="Enter your email address" required aria-label="Email address">
+          <button type="submit" class="btn-primary-custom" style="white-space:nowrap; flex-shrink:0;">
+            <span>Subscribe</span><i class="bi bi-send-fill"></i>
+          </button>
+        </form>
+        <p style="color:rgba(255,255,255,0.4); font-size:0.78rem; margin-top:12px;">
+          <i class="bi bi-lock-fill me-1"></i> No spam, ever. Unsubscribe anytime.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer role="contentinfo">
+  <div class="footer-top">
+    <div class="container-xl">
+      <div class="row g-5">
+        <!-- Brand -->
+        <div class="col-lg-3 col-md-6">
+          <div class="nav-logo mb-4" style="color:#fff; font-size:1.5rem;">
+            <div class="nav-logo-icon"><i class="bi bi-compass-fill"></i></div>
+            Roam<span>ora</span>
+          </div>
+          <p class="footer-brand-text">Crafting extraordinary travel experiences since 2010. Your trusted companion for world-class adventures, luxury escapes, and cultural discoveries.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="social-link" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+          </div>
+        </div>
+        <!-- Company -->
+        <div class="col-lg-2 col-md-3 col-6">
+          <h4 class="footer-heading">Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="blog.html">Travel Blog</a></li>
+            <li><a href="contact.html">Careers</a></li>
+          </ul>
+        </div>
+        <!-- Support -->
+        <div class="col-lg-2 col-md-3 col-6">
+          <h4 class="footer-heading">Support</h4>
+          <ul class="footer-links">
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">Booking Policy</a></li>
+            <li><a href="#">Cancellation</a></li>
+            <li><a href="#">Travel Insurance</a></li>
+          </ul>
+        </div>
+        <!-- Newsletter -->
+        <div class="col-lg-4 col-md-6">
+          <h4 class="footer-heading">Newsletter</h4>
+          <p style="color:rgba(255,255,255,0.55); font-size:0.875rem; margin-bottom:16px; line-height:1.7;">Subscribe to get exclusive deals and travel inspiration every week.</p>
+          <form data-validate aria-label="Footer newsletter form">
+            <input type="email" class="footer-newsletter-input" placeholder="Your email address" required aria-label="Email for newsletter">
+            <button type="submit" class="btn-primary-custom w-100">
+              <span>Subscribe Now</span><i class="bi bi-send-fill"></i>
+            </button>
+          </form>
+          <div class="mt-4" style="color:rgba(255,255,255,0.5); font-size:0.83rem;">
+            <div class="d-flex align-items-center gap-2 mb-2"><i class="bi bi-telephone-fill" style="color:var(--primary);"></i> +1 (800) 555-WANDER</div>
+            <div class="d-flex align-items-center gap-2"><i class="bi bi-envelope-fill" style="color:var(--primary);"></i> hello@Roamora.com</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-xl">
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2026 <span>Roamora</span>. All rights reserved. Crafted with <i class="bi bi-heart-fill" style="color:var(--primary);"></i> for travelers.</p>
+      <div style="display:flex; gap:16px; font-size:0.8rem; color:rgba(255,255,255,0.4);">
+        <a href="#" style="color:rgba(255,255,255,0.4);" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='rgba(255,255,255,0.4)'">Privacy Policy</a>
+        <a href="#" style="color:rgba(255,255,255,0.4);" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='rgba(255,255,255,0.4)'">Terms of Service</a>
+        <a href="sitemap.xml" style="color:rgba(255,255,255,0.4);" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='rgba(255,255,255,0.4)'">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top -->
+<button id="backToTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
