@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>R</text></svg>">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Sign in to your Roamora account to manage bookings, view itineraries, and access exclusive member deals.">
@@ -23,9 +24,9 @@
     }
     [data-theme="dark"] .auth-card-wrap { background: var(--secondary-lt); }
     .auth-card-theme-btn {
-      position: absolute;
-      top: 20px;
-      right: 20px;
+      position: fixed;
+      top: 30px;
+      right: 30px;
       width: 38px;
       height: 38px;
       border-radius: 50%;
@@ -47,14 +48,14 @@
 
 <div class="cursor-dot"></div><div class="cursor-ring"></div>
 
-<div class="auth-card-wrap">
-
-  <!-- Theme Toggle — top right of card -->
+  <!-- Theme Toggle â€” top right of card -->
   <button class="auth-card-theme-btn theme-toggle" aria-label="Toggle theme">
     <i class="bi bi-moon-stars-fill"></i>
   </button>
 
-  <!-- Logo -->
+<div class="auth-card-wrap">
+
+<!-- Logo -->
   <a href="index.html" class="auth-logo-link" style="margin-bottom: 28px; justify-content: center;">
     <div class="nav-logo-icon"><i class="bi bi-compass-fill"></i></div>
     Roam<span style="color:var(--primary);">ora</span>
@@ -63,21 +64,7 @@
   <h1 class="auth-form-title" style="text-align:center;">Welcome Back!</h1>
   <p class="auth-form-sub" style="text-align:center;">Sign in to your Roamora account to continue your journey.</p>
 
-  <!-- Social Login -->
-  <div class="social-login">
-    <button class="social-btn" type="button" id="googleLoginBtn" aria-label="Continue with Google">
-      <i class="bi bi-google google-icon"></i>
-      <span>Google</span>
-    </button>
-    <button class="social-btn" type="button" id="facebookLoginBtn" aria-label="Continue with Facebook">
-      <i class="bi bi-facebook facebook-icon"></i>
-      <span>Facebook</span>
-    </button>
-  </div>
-
-  <div class="or-divider"><span>or sign in with email</span></div>
-
-  <!-- Login Form -->
+<!-- Login Form -->
   <form data-validate id="loginForm" aria-label="Login form" novalidate>
     <div class="form-group-custom">
       <label class="form-label-custom" for="loginEmail">Email Address</label>
@@ -89,7 +76,7 @@
         <input class="form-input-custom" type="password" id="loginPassword" placeholder="Enter your password" required autocomplete="current-password" aria-required="true" style="padding-right:44px;">
         <i class="input-icon bi bi-eye" data-toggle-pass aria-label="Show/hide password"></i>
       </div>
-    <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:24px;">
+    <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:24px; flex-wrap:wrap; gap:12px;">
       <div class="form-check-custom">
         <input type="checkbox" id="rememberMe">
         <label for="rememberMe">Remember me for 30 days</label>
@@ -101,14 +88,35 @@
     </button>
   </form>
 
-  <p class="auth-switch">Don't have an account? <a href="signup.html">Create one free →</a></p>
-
-  <div style="margin-top:28px; padding-top:20px; border-top:1px solid var(--border);">
-    <p style="color:var(--text-muted); font-size:0.78rem; text-align:center; line-height:1.7;">
-      By signing in, you agree to our <a href="#" style="color:var(--primary);">Terms of Service</a> and <a href="#" style="color:var(--primary);">Privacy Policy</a>.
-      Your data is always secure with 256-bit SSL encryption.
-    </p>
+  <!-- Social Login -->
+  <div class="or-divider" style="margin-top:24px;"><span>or continue with</span></div>
+  <div class="social-login">
+    <button class="social-btn" type="button" id="googleLoginBtn" aria-label="Continue with Google">
+      <i class="bi bi-google google-icon"></i>
+      <span>Google</span>
+    </button>
+    <button class="social-btn" type="button" id="facebookLoginBtn" aria-label="Continue with Facebook">
+      <i class="bi bi-facebook facebook-icon"></i>
+      <span>Facebook</span>
+    </button>
   </div>
+
+
+  
+
+
+
+  
+
+
+
+   
+
+
+   
+
+
+  <p class="auth-switch">Don't have an account? <a href="signup.html">Create one free â†’</a></p>
 
 </div>
 
@@ -116,3 +124,7 @@
 <script src="assets/js/main.js"></script>
 </body>
 </html>
+
+
+
+

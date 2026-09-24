@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>R</text></svg>">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Roamora Travel Blog — Inspiring travel stories, destination guides, packing tips, and insider secrets from our expert explorers worldwide.">
@@ -60,7 +61,7 @@
   <div class="container-xl">
     <div class="row g-5">
       <!-- Main Blog Posts -->
-      <div class="col-lg-8">
+      <div class="col-lg-8 order-2 order-lg-1">
         <div class="row g-4">
 
           <div class="col-12">
@@ -157,7 +158,7 @@
       </div>
 
       <!-- Sidebar -->
-      <div class="col-lg-4">
+      <div class="col-lg-4 order-1 order-lg-2">
 
         <!-- Search -->
         <div class="blog-sidebar-widget reveal">
@@ -229,7 +230,7 @@
         </div>
 
         <!-- Newsletter Widget -->
-        <div class="blog-sidebar-widget" style="background:var(--secondary);">
+        <div class="blog-sidebar-widget text-center" style="background:var(--secondary);">
           <h3 class="widget-title-custom" style="color:#fff; border-bottom-color:var(--primary);">Stay Inspired</h3>
           <p style="color:rgba(255,255,255,0.65); font-size:0.875rem; margin-bottom:16px; line-height:1.7;">Get our best travel stories delivered to your inbox every week.</p>
           <form data-validate>
@@ -248,44 +249,70 @@
   <div class="footer-top">
     <div class="container-xl">
       <div class="row g-5">
+        <!-- Brand -->
         <div class="col-lg-3 col-md-6">
-          <div class="nav-logo mb-4" style="color:#fff; font-size:1.5rem;"><div class="nav-logo-icon"><i class="bi bi-compass-fill"></i></div>Roam<span>ora</span></div>
-          <p class="footer-brand-text">Crafting extraordinary travel experiences since 2010.</p>
+          <div class="nav-logo mb-4" style="color:#fff; font-size:1.5rem;">
+            <div class="nav-logo-icon"><i class="bi bi-compass-fill"></i></div>
+            Roam<span>ora</span>
+          </div>
+          <p class="footer-brand-text">Crafting extraordinary travel experiences since 2010. Your trusted companion for world-class adventures, luxury escapes, and cultural discoveries.</p>
           <div class="social-links">
             <a href="#" class="social-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
             <a href="#" class="social-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
             <a href="#" class="social-link" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
             <a href="#" class="social-link" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="social-link" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
           </div>
         </div>
+        <!-- Company -->
         <div class="col-lg-2 col-md-3 col-6">
           <h4 class="footer-heading">Company</h4>
           <ul class="footer-links">
-            <li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li>
-            <li><a href="destinations.html">Destinations</a></li><li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="blog.html">Travel Blog</a></li>
+            <li><a href="contact.html">Careers</a></li>
           </ul>
         </div>
+        <!-- Support -->
         <div class="col-lg-2 col-md-3 col-6">
           <h4 class="footer-heading">Support</h4>
           <ul class="footer-links">
-            <li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
             <li><a href="#">Booking Policy</a></li>
+            <li><a href="#">Cancellation</a></li>
+            <li><a href="#">Travel Insurance</a></li>
           </ul>
         </div>
+        <!-- Newsletter -->
         <div class="col-lg-4 col-md-6">
           <h4 class="footer-heading">Newsletter</h4>
-          <p style="color:rgba(255,255,255,0.55); font-size:0.875rem; margin-bottom:16px;">Get exclusive deals every week.</p>
-          <form data-validate>
-            <input type="email" class="footer-newsletter-input" placeholder="Your email address" required>
-            <button type="submit" class="btn-primary-custom w-100"><span>Subscribe Now</span><i class="bi bi-send-fill"></i></button>
+          <p style="color:rgba(255,255,255,0.55); font-size:0.875rem; margin-bottom:16px; line-height:1.7;">Subscribe to get exclusive deals and travel inspiration every week.</p>
+          <form data-validate aria-label="Footer newsletter form">
+            <input type="email" class="footer-newsletter-input" placeholder="Your email address" required aria-label="Email for newsletter">
+            <button type="submit" class="btn-primary-custom w-100">
+              <span>Subscribe Now</span><i class="bi bi-send-fill"></i>
+            </button>
           </form>
+          <h4 class="footer-heading mt-4" style="margin-bottom: 15px; font-size: 0.95rem;">Contact Us</h4>
+          <div style="color:var(--text-muted); font-size:0.875rem;">
+            <div class="d-flex align-items-center gap-2 mb-2"><i class="bi bi-telephone-fill" style="color:var(--primary);"></i> +1 (800) 555-WANDER</div>
+            <div class="d-flex align-items-center gap-2"><i class="bi bi-envelope-fill" style="color:var(--primary);"></i> hello@Roamora.com</div>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <div class="container-xl">
     <div class="footer-bottom">
-      <p class="footer-copyright">© 2026 <span>Roamora</span>. All rights reserved.</p>
+      <p class="footer-copyright">© 2026 <span>Roamora</span>. All rights reserved. Crafted with <i class="bi bi-heart-fill" style="color:var(--primary);"></i> for travelers.</p>
+      <div style="display:flex; gap:16px; font-size:0.8rem; color:rgba(255,255,255,0.4);">
+        <a href="#" style="color:rgba(255,255,255,0.4);" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='rgba(255,255,255,0.4)'">Privacy Policy</a>
+        <a href="#" style="color:rgba(255,255,255,0.4);" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='rgba(255,255,255,0.4)'">Terms of Service</a>
+        <a href="sitemap.xml" style="color:rgba(255,255,255,0.4);" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='rgba(255,255,255,0.4)'">Sitemap</a>
+      </div>
     </div>
   </div>
 </footer>
@@ -295,3 +322,7 @@
 <script src="assets/js/main.js"></script>
 </body>
 </html>
+
+
+
+
