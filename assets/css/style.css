@@ -1,12 +1,12 @@
 /* ============================================================
-   Roamora — Travel & Tourism Master Stylesheet
+   Roamora â€” Travel & Tourism Master Stylesheet
    Colors: Primary #E8A04A | Secondary #1A2E3B | Tertiary #F5F0E8
    ============================================================ */
 
-/* ── Google Fonts ── */
+/* â”€â”€ Google Fonts â”€â”€ */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap');
 
-/* ── CSS Custom Properties ── */
+/* â”€â”€ CSS Custom Properties â”€â”€ */
 :root {
   --primary:    #E8A04A;
   --primary-dk: #c8832e;
@@ -53,7 +53,7 @@
   --shadow-lg: 0 20px 60px rgba(0,0,0,0.5);
 }
 
-/* ── Reset & Base ── */
+/* â”€â”€ Reset & Base â”€â”€ */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html {
@@ -74,12 +74,12 @@ img { max-width: 100%; height: auto; display: block; }
 a { text-decoration: none; color: inherit; transition: var(--transition-fast); }
 ul { list-style: none; padding: 0; }
 
-/* ── Custom Scrollbar ── */
+/* â”€â”€ Custom Scrollbar â”€â”€ */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--tertiary-dk); }
 ::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 3px; }
 
-/* ── Custom Cursor ── */
+/* â”€â”€ Custom Cursor â”€â”€ */
 .cursor-dot, .cursor-ring {
   position: fixed;
   pointer-events: none;
@@ -100,7 +100,7 @@ ul { list-style: none; padding: 0; }
 }
 .cursor-ring.hovered { width: 54px; height: 54px; opacity: 0.25; }
 
-/* ── Typography ── */
+/* â”€â”€ Typography â”€â”€ */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-head);
   line-height: 1.25;
@@ -130,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 580px;
 }
 
-/* ── Buttons ── */
+/* â”€â”€ Buttons â”€â”€ */
 .btn-primary-custom {
   display: inline-flex;
   align-items: center;
@@ -214,7 +214,7 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: var(--shadow-md);
 }
 
-/* ── Navbar ── */
+/* â”€â”€ Navbar â”€â”€ */
 #mainNavbar {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -443,7 +443,7 @@ h1, h2, h3, h4, h5, h6 {
 .offcanvas-buttons .btn-nav-login,
 .offcanvas-buttons .btn-nav-signup { width: 100%; text-align: center; justify-content: center; display: flex; }
 
-/* ── Page Header (inner pages) ── */
+/* â”€â”€ Page Header (inner pages) â”€â”€ */
 .page-hero {
   min-height: 42vh;
   background: var(--secondary);
@@ -504,7 +504,7 @@ h1, h2, h3, h4, h5, h6 {
 .breadcrumb-custom a:hover { color: var(--primary-lt); }
 .breadcrumb-sep { color: rgba(255,255,255,0.8); }
 
-/* ── Hero (Home) ── */
+/* â”€â”€ Hero (Home) â”€â”€ */
 .hero {
   min-height: 100vh;
   position: relative;
@@ -695,7 +695,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero-search-field select:focus,
 .hero-search-field input:focus { border-color: var(--primary); }
 
-/* ── Scroll Animations ── */
+/* â”€â”€ Scroll Animations â”€â”€ */
 @keyframes fadeSlideUp {
   from { opacity: 0; transform: translateY(30px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -747,7 +747,7 @@ h1, h2, h3, h4, h5, h6 {
 .delay-5 { transition-delay: 0.5s; }
 .delay-6 { transition-delay: 0.6s; }
 
-/* ── Stats Bar ── */
+/* â”€â”€ Stats Bar â”€â”€ */
 .stats-bar {
   background: var(--primary);
   padding: 40px 0;
@@ -775,7 +775,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 4px;
 }
 
-/* ── Section Common ── */
+/* â”€â”€ Section Common â”€â”€ */
 .section-py { padding: var(--section-py) 0; }
 .section-py-sm { padding: 70px 0; }
 
@@ -783,7 +783,7 @@ h1, h2, h3, h4, h5, h6 {
 .section-header.centered { text-align: center; }
 .section-header.centered .section-desc { margin: 0 auto; }
 
-/* ── Destination Cards ── */
+/* â”€â”€ Destination Cards â”€â”€ */
 .dest-card {
   border-radius: var(--radius-lg);
   overflow: hidden;
@@ -853,7 +853,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Featured Large Card */
 .dest-card-lg .dest-card-img { aspect-ratio: 3/4; }
 
-/* ── Feature Icons ── */
+/* â”€â”€ Feature Icons â”€â”€ */
 .feature-box {
   background: var(--white);
   border-radius: var(--radius-lg);
@@ -917,7 +917,7 @@ h1, h2, h3, h4, h5, h6 {
   flex: 1;
 }
 
-/* ── Tour / Package Cards ── */
+/* â”€â”€ Tour / Package Cards â”€â”€ */
 .tour-card {
   background: var(--white);
   border-radius: var(--radius-lg);
@@ -1039,7 +1039,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
-/* ── Testimonials ── */
+/* â”€â”€ Testimonials â”€â”€ */
 .testimonial-section {
   background: var(--secondary);
   position: relative;
@@ -1105,7 +1105,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.78rem;
 }
 
-/* ── Blog Cards ── */
+/* â”€â”€ Blog Cards â”€â”€ */
 .blog-card {
   background: var(--white);
   border-radius: var(--radius-lg);
@@ -1170,7 +1170,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .blog-card:hover .blog-read-more { gap: 12px; }
 
-/* ── Newsletter ── */
+/* â”€â”€ Newsletter â”€â”€ */
 .newsletter-section {
   background: var(--secondary);
   position: relative;
@@ -1215,7 +1215,7 @@ h1, h2, h3, h4, h5, h6 {
 .newsletter-input::placeholder { color: rgba(255,255,255,0.45); }
 .newsletter-input:focus { border-color: var(--primary); }
 
-/* ── Footer ── */
+/* â”€â”€ Footer â”€â”€ */
 footer {
   background: var(--white);
   color: var(--text-dark);
@@ -1283,7 +1283,7 @@ footer {
   padding-left: 0;
 }
 .footer-links a::before {
-  content: '→';
+  content: 'â†’';
   color: var(--primary);
   font-size: 0.75rem;
   opacity: 0;
@@ -1356,7 +1356,7 @@ footer {
 #backToTop.visible { opacity: 1; visibility: visible; transform: translateY(0); }
 #backToTop:hover { background: var(--secondary); color: var(--primary); }
 
-/* ── Service Cards (Services Page) ── */
+/* â”€â”€ Service Cards (Services Page) â”€â”€ */
 .service-card {
   background: var(--white);
   border-radius: var(--radius-lg);
@@ -1430,7 +1430,7 @@ footer {
   font-weight: 600;
 }
 
-/* ── Gallery / Destinations Filter ── */
+/* â”€â”€ Gallery / Destinations Filter â”€â”€ */
 .filter-tabs {
   display: flex;
   gap: 8px;
@@ -1522,7 +1522,7 @@ footer {
 }
 .lightbox-close:hover { background: var(--primary); color: var(--secondary); }
 
-/* ── Blog Page ── */
+/* â”€â”€ Blog Page â”€â”€ */
 .blog-sidebar-widget {
   background: var(--white);
   border-radius: var(--radius-lg);
@@ -1610,7 +1610,7 @@ footer {
 [data-theme="dark"] .tag-pill { background: rgba(255,255,255,0.05); }
 .tag-pill:hover { background: var(--primary); color: var(--secondary); border-color: var(--primary); }
 
-/* ── Contact Page ── */
+/* â”€â”€ Contact Page â”€â”€ */
 .contact-info-card {
   background: var(--white);
   border-radius: var(--radius-lg);
@@ -1680,7 +1680,7 @@ footer {
 .form-control-custom::placeholder { color: var(--text-muted); }
 textarea.form-control-custom { resize: vertical; min-height: 130px; }
 
-/* ── FAQ ── */
+/* â”€â”€ FAQ â”€â”€ */
 .faq-accordion-item {
   background: var(--white);
   border-radius: var(--radius-lg);
@@ -1736,7 +1736,7 @@ textarea.form-control-custom { resize: vertical; min-height: 130px; }
   line-height: 1.8;
 }
 
-/* ── Login / Signup ── */
+/* â”€â”€ Login / Signup â”€â”€ */
 .auth-page {
   min-height: 100vh;
   display: grid;
@@ -1881,7 +1881,7 @@ textarea.form-control-custom { resize: vertical; min-height: 130px; }
 }
 .auth-switch a { color: var(--primary); font-weight: 600; }
 
-/* ── About Page ── */
+/* â”€â”€ About Page â”€â”€ */
 .team-card {
   background: var(--white);
   border-radius: var(--radius-lg);
@@ -1965,7 +1965,7 @@ textarea.form-control-custom { resize: vertical; min-height: 130px; }
 .award-item i { font-size: 2rem; color: var(--primary); margin-bottom: 8px; }
 .award-item p { font-size: 0.8rem; color: var(--text-muted); }
 
-/* ── Floating Shapes ── */
+/* â”€â”€ Floating Shapes â”€â”€ */
 .floating-shape {
   position: absolute;
   border-radius: 50%;
@@ -1978,7 +1978,7 @@ textarea.form-control-custom { resize: vertical; min-height: 130px; }
   66%       { transform: translateY(10px) rotate(-5deg); }
 }
 
-/* ── Utilities ── */
+/* â”€â”€ Utilities â”€â”€ */
 .container-xl { max-width: 1340px; margin: 0 auto; padding: 0 24px; }
 .container-md  { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
 .bg-light-custom { background: var(--tertiary); }
@@ -1986,7 +1986,7 @@ textarea.form-control-custom { resize: vertical; min-height: 130px; }
 .text-primary-custom { color: var(--primary); }
 .divider { width: 60px; height: 3px; background: var(--primary); border-radius: 2px; }
 
-/* ── Responsive ── */
+/* â”€â”€ Responsive â”€â”€ */
 @media (max-width: 1200px) {
   .navbar-inner { padding: 0 24px; }
 }
@@ -2003,6 +2003,9 @@ textarea.form-control-custom { resize: vertical; min-height: 130px; }
 }
 
 @media (max-width: 767px) {
+  .stat-item { padding: 4px 10px; }
+  .stat-number { font-size: 1.6rem; }
+  .stat-label { font-size: 0.6rem; letter-spacing: 1px; }
   :root { --section-py: 60px; }
   .section-header { margin-bottom: 40px; }
   .footer-top { padding: 60px 0 40px; }
@@ -2015,11 +2018,9 @@ textarea.form-control-custom { resize: vertical; min-height: 130px; }
   .hero-title { font-size: clamp(2.2rem, 9vw, 3rem); }
   .social-login { flex-direction: column; }
   #backToTop { bottom: 20px; right: 20px; }
-  .stat-number { font-size: 1.8rem; }
-  .stat-label { font-size: 0.65rem; }
 }
 
-/* ── Loading Animation ── */
+/* â”€â”€ Loading Animation â”€â”€ */
 .page-loader {
   position: fixed;
   inset: 0;
@@ -2037,7 +2038,7 @@ textarea.form-control-custom { resize: vertical; min-height: 130px; }
 .loader-logo {
   font-family: var(--font-head);
   font-size: 2rem;
-  color: #f5f0e8; /* fixed light color — always visible on dark loader bg */
+  color: #f5f0e8; /* fixed light color â€” always visible on dark loader bg */
   font-weight: 700;
 }
 .loader-logo span { color: var(--primary); }
@@ -2059,7 +2060,7 @@ textarea.form-control-custom { resize: vertical; min-height: 130px; }
   to   { width: 100%; }
 }
 
-/* ── Mission/Vision Cards (About) ── */
+/* â”€â”€ Mission/Vision Cards (About) â”€â”€ */
 .mv-card {
   background: var(--white);
   border-radius: var(--radius-lg);
@@ -2090,7 +2091,7 @@ textarea.form-control-custom { resize: vertical; min-height: 130px; }
 .mv-card h3 { font-size: 1.4rem; font-weight: 700; margin-bottom: 14px; }
 .mv-card p { color: var(--text-muted); line-height: 1.8; }
 
-/* ── Map Section ── */
+/* â”€â”€ Map Section â”€â”€ */
 .map-container {
   border-radius: var(--radius-lg);
   overflow: hidden;
@@ -2098,7 +2099,7 @@ textarea.form-control-custom { resize: vertical; min-height: 130px; }
 }
 .map-container iframe { display: block; }
 
-/* ── Contact Social Buttons ── */
+/* â”€â”€ Contact Social Buttons â”€â”€ */
 .contact-social-btn {
   display: inline-flex;
   align-items: center;
@@ -2134,11 +2135,11 @@ textarea.form-control-custom { resize: vertical; min-height: 130px; }
   color: var(--text-dark);
 }
 
-/* ══════════════════════════════════════════
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
    UNIVERSAL EQUAL-HEIGHT CARD SYSTEM
    Apply .card-col to any Bootstrap column
    that wraps a card to enforce equal heights
-   ══════════════════════════════════════════ */
+   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 
 /* Make every Bootstrap column that contains a card stretch equally */
 .row.g-4 > [class*="col"],
