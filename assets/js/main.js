@@ -1,4 +1,4 @@
-﻿/* ============================================================
+/* ============================================================
    Roamora — JavaScript
    ============================================================ */
 
@@ -286,24 +286,8 @@ window.addEventListener('load', () => {
 })();
 
 /* ── Testimonials Auto-Scroll (Simple) ── */
-(function initTestimonials() {
-  const track = document.querySelector('.testimonials-track');
-  if (!track) return;
+// Removed as per user request to keep cards static and bright.
 
-  let current = 0;
-  const cards = track.querySelectorAll('.testimonial-card');
-  if (cards.length < 2) return;
-
-  setInterval(() => {
-    cards[current].style.opacity = '0.5';
-    cards[current].style.transform = 'scale(0.97)';
-    current = (current + 1) % cards.length;
-    cards[current].style.opacity = '1';
-    cards[current].style.transform = 'scale(1)';
-  }, 4000);
-
-  cards.forEach(c => { c.style.transition = 'opacity 0.5s ease, transform 0.5s ease'; });
-})();
 
 /* ── Form Validation ── */
 (function initForms() {
