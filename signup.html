@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>R</text></svg>">
@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <style>
-    body { min-height: 100vh; display: flex; align-items: center; justify-content: center; background: var(--tertiary); padding: 24px 0; }
+    body { min-height: 100vh; display: flex; align-items: center; justify-content: center; background: var(--tertiary); padding: 80px 20px 40px; }
     .auth-card-wrap {
       width: 100%;
       max-width: 520px;
@@ -20,13 +20,13 @@
       box-shadow: var(--shadow-lg);
       padding: 48px 44px 40px;
       position: relative;
-      margin: 40px auto;
+      margin: auto;
     }
     [data-theme="dark"] .auth-card-wrap { background: var(--secondary-lt); }
     .auth-card-theme-btn {
-      position: fixed;
-      top: 30px;
-      right: 30px;
+      position: absolute;
+      top: -55px;
+      right: 0;
       width: 38px;
       height: 38px;
       border-radius: 50%;
@@ -48,12 +48,11 @@
 
 <div class="cursor-dot"></div><div class="cursor-ring"></div>
 
+<div class="auth-card-wrap">
   <!-- Theme Toggle — top right of card -->
   <button class="auth-card-theme-btn theme-toggle" aria-label="Toggle theme">
     <i class="bi bi-moon-stars-fill"></i>
   </button>
-
-<div class="auth-card-wrap">
 
 <!-- Logo -->
   <a href="index.html" class="auth-logo-link" style="margin-bottom: 28px; justify-content: center;">
